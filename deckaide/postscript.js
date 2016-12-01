@@ -175,13 +175,13 @@ function AddCardsToSugg(){
 		}
 		
 		var pagnum;
-		var colors;
-		for(i=0;i<deck.length;i++){
-			colors=deck[i].colorIdentity.join("");
-		}
-		//var colors = accepted_identities.join("|");
-		// alert(colors);
-		// alert(pagnum.toString());
+		//var colors;
+		//for(i=0;i<deck.length;i++){
+		//	colors=deck[i].colorIdentity.join("");
+		//}
+		var colors = accepted_identities.join("|");
+		//alert(colors);
+		//alert(pagnum.toString());
 		var addcard;
 		var printstuff = false;
 		var instants = 0;
