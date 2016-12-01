@@ -1,0 +1,55 @@
+
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="prescript.js"></script>
+</head>
+
+<body>
+		
+		<div class="centered">
+
+		
+		<h1>
+			<input type="button" value="Home" onclick="location.href='index.html'">
+			EDIT DECK! (this page does not work yet)
+		</h1>
+		
+		</div>
+
+		<div class="centered div" id="existing_deck" style="display:none">
+		
+			<form method="post" id="new_deck_form">
+				CHOOSE AN EXISTING DECK:
+				<input type="hidden" name="state" value="2">
+				<input type="text" name="deckname">
+				<input type="submit" value="Edit Deck"/>
+			</form>
+		</div>
+	
+		
+</body>
+
+
+
+<script>
+	
+	function initial_setup(){
+		document.getElementById('choose_deck').style.display="block";
+		for(i=0;i<)
+	}
+	
+	function change_state(old_state, new_state){
+		document.getElementById(old_state).style.display="none";
+		document.getElementById(new_state).style.display="block";
+	}
+	
+	function openContent(content_id){
+		document.getElementById(content_id).style.display="block";
+	}
+	
+
+</script>
+
+</html>
