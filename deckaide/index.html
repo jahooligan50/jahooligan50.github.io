@@ -1,23 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.*"%>
-<%@ page import="java.io.*" %>
-<%@ page import="java.sql.*"%>
 
-<%
-String cardimage1 = "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=";
-String cardimage = "";
-String cardimage2 = "&type=card";
-String cardback = "http://www.cliftonroadgames.co.uk/events/mtg_card-back.jpg";
-String cardinput = request.getParameter("cardinput");
-String deckname = request.getParameter("deckname");
-String format = request.getParameter("format");
-String colors = request.getParameter("colors");
-String seed = request.getParameter("seed");
-String decktrue = request.getParameter("decktrue");
-String state = "0";
-state = request.getParameter("state");
-
-%>
 <html>
 <link rel="stylesheet" type="text/css" href="style.css">
 <head>
@@ -49,7 +30,7 @@ state = request.getParameter("state");
 
 		
 		<h1>
-			<input type="button" value="Home" onclick="location.href='index.jsp'">
+			<input type="button" value="Home" onclick="location.href='index.html'">
 			Welcome to Deck-Building Aide!
 		</h1>
 		
@@ -57,8 +38,8 @@ state = request.getParameter("state");
 		
 		<div class="centered div" id="choose_deck">
 			
-			<input type="button" value="Create A New Deck" onclick="location.href='new_deck.jsp'"/>
-			<input type="button" value="Edit An Existing Deck" onclick="location.href='edit_deck.jsp'"/>
+			<input type="button" value="Create A New Deck" onclick="location.href='new_deck.html'"/>
+			<input type="button" value="Edit An Existing Deck" onclick="location.href='edit_deck.html'"/>
 		</div>
 
 		<div class="centered div" id="new_deck" style="display:none">
