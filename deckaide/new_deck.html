@@ -1,8 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.*"%>
-<%@ page import="java.io.*" %>
-<%@ page import="java.sql.*"%>
-
 
 <html>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -52,7 +47,7 @@
 	<body>
 			<div class="centered">
 				<h1>
-					<input type="button" value="Home" onclick="location.href='index.jsp'">
+					<input type="button" value="Home" onclick="location.href='index.html'">
 					NEW DECK!
 				</h1>
 			</div>
@@ -62,7 +57,7 @@
 			</script>
 			
 			<div class="centered div" id="new_deck">
-				<form action="new_deck.jsp" method="post" id="new_deck_form">
+				<form action="new_deck.html" method="post" id="new_deck_form">
 					ENTER A DECK NAME:
 					<input id="deckname" type="text" name="deckname">
 					<input type="button" value="Change Deck Name" onclick="AddDeckName()"/>
